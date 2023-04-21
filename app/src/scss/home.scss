@@ -1,0 +1,27 @@
+.home {
+  margin: 100px auto;
+  text-align: center;
+
+  &__subtitle {
+    margin: 10px 0;
+  }
+
+  &__title {
+    margin: 10px 0;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+
+  &__link {
+    display: inline-block;
+    background-color: darkgray;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+  }
+}

@@ -1,0 +1,13 @@
+.projects {
+  margin: 100px auto;
+
+  &__title {
+    text-transform: uppercase;
+  }
+}
+
+.project-card {
+  &__link {
+    display: block;
+  }
+}

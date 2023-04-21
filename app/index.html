@@ -10,25 +10,333 @@
     <link href="./src/css/style.min.css" rel="stylesheet" />
     <script defer src="./src/js/main.min.js"></script>
 
-    <title>Bazdyreva Elizaveta</title>
+    <title>Dev Bazdyreva Elizaveta</title>
   </head>
   <body class="body page__body">
     <header class="header body__header">
       <nav class="nav header__nav">
         <ul class="nav-list">
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Mn</a>
+            <a class="nav-list__link" href="#">Главная</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">About</a>
+            <a class="nav-list__link" href="#">Обо мне</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Projects</a>
+            <a class="nav-list__link" href="#">Проекты</a>
+          </li>
+          <li class="nav-list__item">
+            <button class="button nav-list__button" type="button">
+              RU | EN
+            </button>
+          </li>
+          <li class="nav-list__item">
+            <button class="button nav-list__button" type="button">Night</button>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main body__main"></main>
-    <footer class="footer body__footer">footer</footer>
+    <main class="main body__main">
+      <div class="home main__home wrapper">
+        <p class="home__subtitle">Привет! Меня зовут</p>
+        <h1 class="home__title">Баздырева Елизавета</h1>
+        <p class="home__subtitle">Я frontend-разработчик</p>
+        <div class="socials home__socials">
+          <a class="socials__link" href="#">Telegram</a>
+          <a class="socials__link" href="#">Whatsapp</a>
+          <a class="socials__link" href="#">Github</a>
+        </div>
+      </div>
+      <div class="skills main__skills wrapper">
+        <h2 class="skills__title">Skills</h2>
+        <ul class="skill-list skills__skill-list">
+          <li class="skill-list__item">HTML5</li>
+          <li class="skill-list__item">CSS3</li>
+          <li class="skill-list__item">Javascript</li>
+          <li class="skill-list__item">Typescript</li>
+          <li class="skill-list__item">Axios</li>
+        </ul>
+        <ul>
+          <li class="skill-list__item">SCSS(SASS)</li>
+          <li class="skill-list__item">Bem</li>
+          <li class="skill-list__item">Tailwind</li>
+          <li class="skill-list__item">Bootstrap</li>
+        </ul>
+        <ul class="skill-list skills__skill-list">
+          <li class="skill-list__item">React</li>
+          <li class="skill-list__item">Redux</li>
+          <li class="skill-list__item">Redux Toolkit</li>
+          <li class="skill-list__item">React Router</li>
+        </ul>
+        <ul class="skill-list skills__skill-list">
+          <li class="skill-list__item">Angular 7+</li>
+          <li class="skill-list__item">NgRx</li>
+          <li class="skill-list__item">RxJS</li>
+          <li class="skill-list__item">Material UI</li>
+        </ul>
+        <ul class="skill-list skills__skill-list">
+          <li class="skill-list__item">Vue3</li>
+          <li class="skill-list__item">Pinia</li>
+        </ul>
+        <p class="skills__description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
+          deserunt dicta eveniet ipsam nesciunt provident quis reprehenderit
+          suscipit vitae? Facere hic iste nemo nihil perspiciatis quae quibusdam
+          quis reiciendis ut!
+        </p>
+      </div>
+      <div class="description main__description wrapper">
+        <article class="work">
+          <h2 class="work__title">Work experience</h2>
+          <p class="work__info">
+            Я frontend-разработчик, который любит создавать пользовательские
+            интерфейсы. Особенное внимание при разработке я уделяю проработке
+            сценариев поведения пользователя: мне важно, чтобы человек понимал,
+            что в данный момент происходит в приложении (загрузка, обработка
+            ошибок, сообщения о валидации). Очень часто мои знакомые
+            сталкиваются с неочевидными поведением программы и пишут мне "а что
+            можно сделать?". Я бы хотела, чтобы у пользователей не было таких
+            вопросов, а интерфейс с ними общался. Также для меня важно делать
+            вёрстку доступной для всех пользователей.
+          </p>
+          <p class="work__info">
+            Программированием я начала интересоваться на работе (см. в резюме
+            Актион). Поначалу я изучила основы HTML и CSS, чтобы помогать
+            коллегам поддерживать сайт продукта. Через время я уже ежедневно
+            выполняла задачи по вёрстке: исправление багов, создание новых
+            страниц сайта и переписывание старых. Иногда я создавала дизайн
+            новых виджетов с помощью Photoshop, позже перешла на Figma.
+          </p>
+          <p class="work__info">
+            В 2018 году я закончила трёхступенчатый курс по вёрстке в
+            Специалисте , чтобы лучше выполнять рабочие обязанности. Там же я
+            впервые познакомилась с Javascript.
+          </p>
+          <p class="work__info">
+            Через время у меня появилась вторая работа, где мы с командой с нуля
+            создали Single Page Application (Angular + Material UI) для
+            мониторинга рисков бизнеса. Проект был успешно сдан в срок.
+            Следующий проект - приложение с огромной кодовой базой на Ext.js.
+            Задачей команды была поддержка: устранение багов, рефакторинг кода.
+          </p>
+          <p class="work__info">
+            В 2020 году я пошла улучшать свои навыки в HTML Academy. Там я
+            серьезнее погрузилась в изучение Javascript, Typescript, а также
+            изучила React + Redux Toolkit. Параллельно я работала в
+            бухгалтерской компании, где обновляла ПО, выполняла небольшие заказы
+            на сайты-визитки и помогала устранять баги на уже существующих
+            сайтах заказчиков. Курс помог структурировать знания и не бояться
+            использовать новые для меня технологии. После окончания с проходила
+            практику в Affinage.
+          </p>
+          <p class="work__info">
+            В данный момент я нахожусь в активном поиске работы, а также изучаю
+            vue, angular и немного node.js.
+          </p>
+        </article>
+
+        <article class="about">
+          <h2 class="about__title">Обо мне</h2>
+          <p class="about__info">
+            Помимо разработки интерфейсов я занималась бухгалтерией,
+            риелторством, преподаванием русского языка и литературы. Отдельную
+            большую часть моей жизни занимали бальные танцы, которыми я
+            занималась 10 лет и преподавала.
+          </p>
+          <p class="about__info">
+            В свободное время я люблю узнавать больше о работе браузера, читать
+            статьи о технологиях. Очень люблю читать художественную литературу и
+            смотреть аниме по выходным, а также проводить время со своими 2
+            прекрасными котами:)
+          </p>
+        </article>
+      </div>
+      <div class="projects main__projects wrapper">
+        <h2 class="projects__title">Рабочие проекты:</h2>
+        <article class="project projects__item">
+          <h3 class="project__title">Neksy</h3>
+          <p class="project__description">
+            Сайт-визитка о бухгалтерских услугах. Текст, дизайн для проекта я
+            разрабатывала самостоятельно. Естественно, код тоже.
+            <a href="#">Перейти на сайт</a>
+          </p>
+          <div class="project__technologies">
+            <ul class="technologies-list project__technologies-list">
+              <li class="technologies-list__item">HTML5</li>
+              <li class="technologies-list__item">CSS3</li>
+              <li class="technologies-list__item">Javascript</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project projects__item">
+          <h3 class="project__title">Маркет трейд</h3>
+          <p class="project__description">
+            Сайт поставщика продуктов питания. Текст и дизайн также созданы
+            мной, как и код. Сайт работает на движке WordPress.
+            <a href="#">Перейти на сайт</a>
+          </p>
+          <div class="project__technologies">
+            <ul class="technologies-list project__technologies-list">
+              <li class="technologies-list__item">HTML5</li>
+              <li class="technologies-list__item">CSS3</li>
+              <li class="technologies-list__item">PHP</li>
+              <li class="technologies-list__item">Javascript</li>
+              <li class="technologies-list__item">Wordpress</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h3 class="project__title">Максэл</h3>
+          <p class="project__description">
+            Сайт дистрибьютора продуктов питания. Текст и дизайн также созданы
+            мной, как и код. Сайт работает на движке WordPress.
+            <a href="#">Перейти на сайт</a>
+          </p>
+          <div class="project__technologies">
+            <ul class="technologies-list project__technologies-list">
+              <li class="technologies-list__item">HTML5</li>
+              <li class="technologies-list__item">CSS3</li>
+              <li class="technologies-list__item">PHP</li>
+              <li class="technologies-list__item">Javascript</li>
+              <li class="technologies-list__item">Wordpress</li>
+            </ul>
+          </div>
+        </article>
+
+        <article>
+          <h3 class="project__title">Упрощёнка</h3>
+          <p class="project__description">
+            Сайт времён работы в Актион, моей задачей была вёрстка.
+            <a href="#">Перейти на сайт</a>
+          </p>
+          <div class="project__technologies">
+            <ul class="technologies-list project__technologies-list">
+              <li class="technologies-list__item">HTML5</li>
+              <li class="technologies-list__item">CSS3</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="learning-projects main__learning-projects wrapper">
+        <h2 class="learning-projects__title">Мои учебные и пет проекты:</h2>
+
+        <article class="project-card learning-projects__project">
+          <h3 class="project-card__title">Этот сайт портфолио</h3>
+          <p class="project-card__description">Сайт с информацией обо мне:)</p>
+          <div class="project-card__technologies">
+            <ul class="technologies-list project-card__technologies-list">
+              <li class="technologies-list__item">HTML5</li>
+              <li class="technologies-list__item">SCSS</li>
+              <li class="technologies-list__item">Gulp</li>
+              <li class="technologies-list__item">Javascript</li>
+            </ul>
+          </div>
+        </article>
+        <article class="project-card learning-projects__project">
+          <h3 class="project-card__title">Шесть городов</h3>
+          <p class="project-card__description">
+            Single Page Application для бронирования туристами жилья на время
+            отпуска. По функционалу напоминает airbnb.
+          </p>
+          <div class="project-card__technologies">
+            <ul class="technologies-list project__technologies-list">
+              <li class="technologies-list__item">HTML5</li>
+              <li class="technologies-list__item">CSS</li>
+              <li class="technologies-list__item">React</li>
+              <li class="technologies-list__item">Redux Toolkit</li>
+              <li class="technologies-list__item">Typescript</li>
+              <li class="technologies-list__item">Axios</li>
+              <li class="technologies-list__item">Leaflet</li>
+            </ul>
+          </div>
+          <ul class="project-card__link-list">
+            <li class="project-card__link-item">
+              <a class="project-card__link" href="#">Посмотреть сайт</a>
+            </li>
+            <li class="project-card__link-item">
+              <a class="project-card__link" href="#">
+                Прочитать описание функционала
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article class="project-card learning-projects__project">
+          <h3 class="project-card__title">Большое путешествие</h3>
+          <p class="project__description">
+            Проект, которым я горжусь больше всего. Это веб-приложение для
+            планирования путешествий (точки для посещения, расходы). Проект
+            написан на Vanilla Javascript в ООП парадигме. Грубо говоря это
+            попытка написать фреймворк, так как при написании руководствовались
+            MVP подходом. После подобных проектов начинаешь ценить современные
+            блага в виде удобных фреймворков
+          </p>
+          <div class="project__technologies">
+            <ul class="technologies-list project__technologies-list">
+              <li class="technologies-list__item">HTML5</li>
+              <li class="technologies-list__item">CSS</li>
+              <li class="technologies-list__item">JavaScript(es8)</li>
+              <li class="technologies-list__item">OOP + MVP</li>
+              <li class="technologies-list__item">Webpack</li>
+              <li class="technologies-list__item">chart.js</li>
+              <li class="technologies-list__item">flatpickr</li>
+              <li class="technologies-list__item">dayjs</li>
+            </ul>
+          </div>
+          <ul class="project-card__link-list">
+            <li class="project-card__link-item">
+              <a class="project-card__link" href="#">Посмотреть сайт</a>
+            </li>
+            <li class="project-card__link-item">
+              <a class="project-card__link" href="#">
+                Прочитать описание функционала
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article class="project-card learning-projects__project">
+          <h3 class="project-card__title">Интернет-магазин фотоаппаратов</h3>
+          <p class="project__description">
+            Single Page Application для покупки фотоаппарата.
+          </p>
+          <div class="project__technologies">
+            <ul class="technologies-list project__technologies-list">
+              <li class="technologies-list__item">HTML5</li>
+              <li class="technologies-list__item">CSS</li>
+              <li class="technologies-list__item">React</li>
+              <li class="technologies-list__item">Typescript</li>
+              <li class="technologies-list__item">React Dom Router</li>
+              <li class="technologies-list__item">Redux Toolkit</li>
+              <li class="technologies-list__item">Jest</li>
+              <li class="technologies-list__item">Axios</li>
+            </ul>
+          </div>
+          <ul class="project-card__link-list">
+            <li class="project-card__link-item">
+              <a class="project-card__link" href="#">Посмотреть сайт</a>
+            </li>
+            <li class="project-card__link-item">
+              <a class="project-card__link" href="#">
+                Прочитать описание функционала
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
+      <div class="certificates main__certificates wrapper">
+        <h2 class="certificates__title">
+          Здесь можно посмотреть мои сертификаты
+        </h2>
+      </div>
+    </main>
+    <footer class="footer body__footer">
+      <h2 class="footer__title">Спасибо за внимание!</h2>
+      <div>Здесь вы можете скачать моё резюме:</div>
+      <div>
+        <a href="#">Написать на почту</a>
+        Телефон: +79260589068
+      </div>
+    </footer>
   </body>
 </html>

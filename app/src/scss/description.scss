@@ -1,0 +1,15 @@
+.description {
+  margin: 0 auto;
+
+  .work {
+    &__title {
+      text-transform: uppercase;
+    }
+  }
+
+  .about {
+    &__title {
+      text-transform: uppercase;
+    }
+  }
+}

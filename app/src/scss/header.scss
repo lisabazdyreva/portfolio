@@ -1,0 +1,25 @@
+/* build footer*/
+.header {
+  display: flex;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  &__button {
+    margin: 10px;
+  }
+}
