@@ -17,16 +17,22 @@
       <nav class="nav header__nav">
         <ul class="nav-list">
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Главная</a>
+            <a class="nav-list__link lang_rus" href="#">Главная</a>
+            <a class="nav-list__link lang_eng" href="#">Main</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Обо мне</a>
+            <a class="nav-list__link lang_rus" href="#">Обо мне</a>
+            <a class="nav-list__link lang_eng" href="#">About</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Проекты</a>
+            <a class="nav-list__link lang_rus" href="#">Проекты</a>
+            <a class="nav-list__link lang_eng" href="#">Projects</a>
           </li>
           <li class="nav-list__item">
-            <button class="button nav-list__button" type="button">
+            <button
+              class="button language-button nav-list__button"
+              type="button"
+            >
               RU | EN
             </button>
           </li>
@@ -38,9 +44,12 @@
     </header>
     <main class="main body__main">
       <div class="home main__home wrapper">
-        <p class="home__subtitle">Привет! Меня зовут</p>
-        <h1 class="home__title">Баздырева Елизавета</h1>
-        <p class="home__subtitle">Я frontend-разработчик</p>
+        <p class="home__subtitle lang_rus">Привет! Меня зовут</p>
+        <p class="home__subtitle lang_eng">Hi there! My name is</p>
+        <h1 class="home__title lang_rus">Баздырева Елизавета</h1>
+        <h1 class="home__title lang_eng">Bazdyreva Elizaveta</h1>
+        <p class="home__subtitle lang_rus">Я frontend-разработчик</p>
+        <p class="home__subtitle lang_eng">I'm a frontend developer</p>
         <div class="socials home__socials">
           <a class="socials__link" href="#">Telegram</a>
           <a class="socials__link" href="#">Whatsapp</a>
@@ -48,7 +57,8 @@
         </div>
       </div>
       <div class="skills main__skills wrapper">
-        <h2 class="skills__title">Skills</h2>
+        <h2 class="skills__title lang_rus">Навыки</h2>
+        <h2 class="skills__title lang_eng">Skills</h2>
         <ul class="skill-list skills__skill-list">
           <li class="skill-list__item">HTML5</li>
           <li class="skill-list__item">CSS3</li>
@@ -58,7 +68,7 @@
         </ul>
         <ul>
           <li class="skill-list__item">SCSS(SASS)</li>
-          <li class="skill-list__item">Bem</li>
+          <li class="skill-list__item">BEM</li>
           <li class="skill-list__item">Tailwind</li>
           <li class="skill-list__item">Bootstrap</li>
         </ul>
@@ -78,7 +88,10 @@
           <li class="skill-list__item">Vue3</li>
           <li class="skill-list__item">Pinia</li>
         </ul>
-        <p class="skills__description">
+        <p class="skills__description lang_rus">
+          Тут будет описание моих навыков и чем заниамюсь сейчас
+        </p>
+        <p class="skills__description lang_eng">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
           deserunt dicta eveniet ipsam nesciunt provident quis reprehenderit
           suscipit vitae? Facere hic iste nemo nihil perspiciatis quae quibusdam
@@ -87,8 +100,10 @@
       </div>
       <div class="description main__description wrapper">
         <article class="work">
-          <h2 class="work__title">Work experience</h2>
-          <p class="work__info">
+          <h2 class="work__title lang_rus">О работе</h2>
+          <h2 class="work__title lang_eng">Work experience</h2>
+
+          <p class="work__info lang_rus">
             Я frontend-разработчик, который любит создавать пользовательские
             интерфейсы. Особенное внимание при разработке я уделяю проработке
             сценариев поведения пользователя: мне важно, чтобы человек понимал,
@@ -99,7 +114,9 @@
             вопросов, а интерфейс с ними общался. Также для меня важно делать
             вёрстку доступной для всех пользователей.
           </p>
-          <p class="work__info">
+          <p class="work__info lang_eng">lorem</p>
+
+          <p class="work__info lang_rus">
             Программированием я начала интересоваться на работе (см. в резюме
             Актион). Поначалу я изучила основы HTML и CSS, чтобы помогать
             коллегам поддерживать сайт продукта. Через время я уже ежедневно
@@ -107,19 +124,25 @@
             страниц сайта и переписывание старых. Иногда я создавала дизайн
             новых виджетов с помощью Photoshop, позже перешла на Figma.
           </p>
-          <p class="work__info">
+          <p class="work__info lang_eng">lorem</p>
+
+          <p class="work__info lang_rus">
             В 2018 году я закончила трёхступенчатый курс по вёрстке в
-            Специалисте , чтобы лучше выполнять рабочие обязанности. Там же я
+            Специалисте, чтобы лучше выполнять рабочие обязанности. Там же я
             впервые познакомилась с Javascript.
           </p>
-          <p class="work__info">
+          <p class="work__info lang_eng">lorem</p>
+
+          <p class="work__info lang_rus">
             Через время у меня появилась вторая работа, где мы с командой с нуля
             создали Single Page Application (Angular + Material UI) для
             мониторинга рисков бизнеса. Проект был успешно сдан в срок.
             Следующий проект - приложение с огромной кодовой базой на Ext.js.
             Задачей команды была поддержка: устранение багов, рефакторинг кода.
           </p>
-          <p class="work__info">
+          <p class="work__info lang_eng">lorem</p>
+
+          <p class="work__info lang_rus">
             В 2020 году я пошла улучшать свои навыки в HTML Academy. Там я
             серьезнее погрузилась в изучение Javascript, Typescript, а также
             изучила React + Redux Toolkit. Параллельно я работала в
@@ -129,37 +152,49 @@
             использовать новые для меня технологии. После окончания с проходила
             практику в Affinage.
           </p>
-          <p class="work__info">
+          <p class="work__info lang_eng">lorem</p>
+
+          <p class="work__info lang_rus">
             В данный момент я нахожусь в активном поиске работы, а также изучаю
             vue, angular и немного node.js.
           </p>
+          <p class="work__info lang_eng">lorem</p>
         </article>
-
         <article class="about">
-          <h2 class="about__title">Обо мне</h2>
-          <p class="about__info">
+          <h2 class="about__title lang_eng">About me</h2>
+          <h2 class="about__title lang_rus">Обо мне</h2>
+          <p class="about__info lang_rus">
             Помимо разработки интерфейсов я занималась бухгалтерией,
             риелторством, преподаванием русского языка и литературы. Отдельную
             большую часть моей жизни занимали бальные танцы, которыми я
             занималась 10 лет и преподавала.
           </p>
-          <p class="about__info">
+          <p class="about__info lang_eng">lorem</p>
+
+          <p class="about__info lang_rus">
             В свободное время я люблю узнавать больше о работе браузера, читать
             статьи о технологиях. Очень люблю читать художественную литературу и
             смотреть аниме по выходным, а также проводить время со своими 2
             прекрасными котами:)
           </p>
+          <p class="about__info lang_eng">lorem</p>
         </article>
       </div>
       <div class="projects main__projects wrapper">
-        <h2 class="projects__title">Рабочие проекты:</h2>
+        <h2 class="projects__title lang_eng">Projects from work:</h2>
+        <h2 class="projects__title lang_rus">Рабочие проекты:</h2>
+
         <article class="project projects__item">
-          <h3 class="project__title">Neksy</h3>
-          <p class="project__description">
+          <h3 class="project__title lang_eng">Neksy</h3>
+          <h3 class="project__title lang_rus">Нэкси</h3>
+          <p class="project__description lang_rus">
             Сайт-визитка о бухгалтерских услугах. Текст, дизайн для проекта я
             разрабатывала самостоятельно. Естественно, код тоже.
-            <a href="#">Перейти на сайт</a>
           </p>
+          <p class="project__description lang_eng">About site</p>
+          <a class="project__link lang_rus" href="#">Перейти на сайт</a>
+          <a class="project__link lang_eng" href="#">Go to site >></a>
+
           <div class="project__technologies">
             <ul class="technologies-list project__technologies-list">
               <li class="technologies-list__item">HTML5</li>
@@ -170,12 +205,15 @@
         </article>
 
         <article class="project projects__item">
-          <h3 class="project__title">Маркет трейд</h3>
-          <p class="project__description">
+          <h3 class="project__title lang_eng">Market trade</h3>
+          <h3 class="project__title lang_rus">Маркет трейд</h3>
+          <p class="project__description lang_rus">
             Сайт поставщика продуктов питания. Текст и дизайн также созданы
             мной, как и код. Сайт работает на движке WordPress.
-            <a href="#">Перейти на сайт</a>
           </p>
+          <p class="project__description lang_eng">About site</p>
+          <a class="project__link lang_rus" href="#">Перейти на сайт</a>
+          <a class="project__link lang_eng" href="#">Go to site >></a>
           <div class="project__technologies">
             <ul class="technologies-list project__technologies-list">
               <li class="technologies-list__item">HTML5</li>
@@ -187,13 +225,16 @@
           </div>
         </article>
 
-        <article>
-          <h3 class="project__title">Максэл</h3>
-          <p class="project__description">
+        <article class="project projects__item">
+          <h3 class="project__title lang_eng">Maxel</h3>
+          <h3 class="project__title lang_rus">Максэл</h3>
+          <p class="project__description lang_rus">
             Сайт дистрибьютора продуктов питания. Текст и дизайн также созданы
             мной, как и код. Сайт работает на движке WordPress.
-            <a href="#">Перейти на сайт</a>
           </p>
+          <p class="project__description lang_eng">About site</p>
+          <a class="project__link lang_rus" href="#">Перейти на сайт</a>
+          <a class="project__link lang_eng" href="#">Go to site >></a>
           <div class="project__technologies">
             <ul class="technologies-list project__technologies-list">
               <li class="technologies-list__item">HTML5</li>
@@ -206,11 +247,14 @@
         </article>
 
         <article>
-          <h3 class="project__title">Упрощёнка</h3>
-          <p class="project__description">
+          <h3 class="project__title lang_eng">USN</h3>
+          <h3 class="project__title lang_rus">Упрощёнка</h3>
+          <p class="project__description lang_rus">
             Сайт времён работы в Актион, моей задачей была вёрстка.
-            <a href="#">Перейти на сайт</a>
           </p>
+          <p class="project__description lang_eng">About site</p>
+          <a class="project__link lang_rus" href="#">Перейти на сайт</a>
+          <a class="project__link lang_eng" href="#">Go to site >></a>
           <div class="project__technologies">
             <ul class="technologies-list project__technologies-list">
               <li class="technologies-list__item">HTML5</li>
@@ -220,11 +264,21 @@
         </article>
       </div>
       <div class="learning-projects main__learning-projects wrapper">
-        <h2 class="learning-projects__title">Мои учебные и пет проекты:</h2>
-
+        <h2 class="learning-projects__title lang_eng">
+          My learning and pet projects:
+        </h2>
+        <h2 class="learning-projects__title lang_rus">
+          Мои учебные и пет проекты:
+        </h2>
         <article class="project-card learning-projects__project">
-          <h3 class="project-card__title">Этот сайт портфолио</h3>
-          <p class="project-card__description">Сайт с информацией обо мне:)</p>
+          <h3 class="project-card__title lang_eng">This portfolio site</h3>
+          <h3 class="project-card__title lang_rus">Этот сайт портфолио</h3>
+          <p class="project-card__description lang_eng">
+            A site with information about me:)
+          </p>
+          <p class="project-card__description lang_rus">
+            Сайт с информацией обо мне:)
+          </p>
           <div class="project-card__technologies">
             <ul class="technologies-list project-card__technologies-list">
               <li class="technologies-list__item">HTML5</li>
@@ -235,11 +289,13 @@
           </div>
         </article>
         <article class="project-card learning-projects__project">
-          <h3 class="project-card__title">Шесть городов</h3>
-          <p class="project-card__description">
+          <h3 class="project-card__title lang_eng">Six cities</h3>
+          <h3 class="project-card__title lang_rus">Шесть городов</h3>
+          <p class="project-card__description lang_rus">
             Single Page Application для бронирования туристами жилья на время
             отпуска. По функционалу напоминает airbnb.
           </p>
+          <p class="project-card__description lang_eng">About</p>
           <div class="project-card__technologies">
             <ul class="technologies-list project__technologies-list">
               <li class="technologies-list__item">HTML5</li>
@@ -253,18 +309,25 @@
           </div>
           <ul class="project-card__link-list">
             <li class="project-card__link-item">
-              <a class="project-card__link" href="#">Посмотреть сайт</a>
+              <a class="project-card__link lang_eng" href="#">Go to site</a>
+              <a class="project-card__link lang_rus" href="#"
+                >Посмотреть сайт</a
+              >
             </li>
             <li class="project-card__link-item">
-              <a class="project-card__link" href="#">
+              <a class="project-card__link lang_rus" href="#">
                 Прочитать описание функционала
+              </a>
+              <a class="project-card__link lang_eng" href="#">
+                Read about app>>
               </a>
             </li>
           </ul>
         </article>
         <article class="project-card learning-projects__project">
-          <h3 class="project-card__title">Большое путешествие</h3>
-          <p class="project__description">
+          <h3 class="project-card__title lang_eng">Big trip</h3>
+          <h3 class="project-card__title lang_rus">Большое путешествие</h3>
+          <p class="project__description lang_rus">
             Проект, которым я горжусь больше всего. Это веб-приложение для
             планирования путешествий (точки для посещения, расходы). Проект
             написан на Vanilla Javascript в ООП парадигме. Грубо говоря это
@@ -272,6 +335,7 @@
             MVP подходом. После подобных проектов начинаешь ценить современные
             блага в виде удобных фреймворков
           </p>
+          <p class="project__description lang_eng">About</p>
           <div class="project__technologies">
             <ul class="technologies-list project__technologies-list">
               <li class="technologies-list__item">HTML5</li>
@@ -286,20 +350,32 @@
           </div>
           <ul class="project-card__link-list">
             <li class="project-card__link-item">
-              <a class="project-card__link" href="#">Посмотреть сайт</a>
+              <a class="project-card__link lang_eng" href="#">Go to site</a>
+              <a class="project-card__link lang_rus" href="#"
+                >Посмотреть сайт</a
+              >
             </li>
             <li class="project-card__link-item">
-              <a class="project-card__link" href="#">
+              <a class="project-card__link lang_rus" href="#">
                 Прочитать описание функционала
+              </a>
+              <a class="project-card__link lang_eng" href="#">
+                Read about app>>
               </a>
             </li>
           </ul>
         </article>
         <article class="project-card learning-projects__project">
-          <h3 class="project-card__title">Интернет-магазин фотоаппаратов</h3>
-          <p class="project__description">
+          <h3 class="project-card__title lang_eng">
+            Online shop selling cameras
+          </h3>
+          <h3 class="project-card__title lang_rus">
+            Интернет-магазин фотоаппаратов
+          </h3>
+          <p class="project__description lang_rus">
             Single Page Application для покупки фотоаппарата.
           </p>
+          <p class="project__description lang_eng">About</p>
           <div class="project__technologies">
             <ul class="technologies-list project__technologies-list">
               <li class="technologies-list__item">HTML5</li>
@@ -314,26 +390,36 @@
           </div>
           <ul class="project-card__link-list">
             <li class="project-card__link-item">
-              <a class="project-card__link" href="#">Посмотреть сайт</a>
+              <a class="project-card__link lang_eng" href="#">Go to site</a>
+              <a class="project-card__link lang_rus" href="#"
+                >Посмотреть сайт</a
+              >
             </li>
             <li class="project-card__link-item">
-              <a class="project-card__link" href="#">
+              <a class="project-card__link lang_rus" href="#">
                 Прочитать описание функционала
+              </a>
+              <a class="project-card__link lang_eng" href="#">
+                Read about app>>
               </a>
             </li>
           </ul>
         </article>
       </div>
       <div class="certificates main__certificates wrapper">
-        <h2 class="certificates__title">
+        <h2 class="certificates__title lang_eng">
+          Here you can look at my certificates
+        </h2>
+        <h2 class="certificates__title lang_rus">
           Здесь можно посмотреть мои сертификаты
         </h2>
       </div>
     </main>
     <footer class="footer body__footer">
-      <h2 class="footer__title">Спасибо за внимание!</h2>
-      <div>Здесь вы можете скачать моё резюме:</div>
-      <div>
+      <h2 class="footer__title lang_eng">Thanks for your attention!</h2>
+      <h2 class="footer__title lang_rus">Спасибо за внимание!</h2>
+      <div class="lang_rus">Здесь вы можете скачать моё резюме:</div>
+      <div class="lang_rus">
         <a href="#">Написать на почту</a>
         Телефон: +79260589068
       </div>

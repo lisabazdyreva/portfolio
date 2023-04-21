@@ -19,11 +19,7 @@ function styles() {
 }
 
 function scripts() {
-  return src([
-    // "app/src/js/main.js",
-    "app/src/js/*.js",
-    "!app/js/main.min.js",
-  ])
+  return src(["app/src/js/*.js", "!app/src/js/main.min.js"])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(dest("app/src/js"))
@@ -32,7 +28,7 @@ function scripts() {
 
 function watching() {
   watch(["app/src/scss/*.scss"], styles);
-  watch(["app/src/js/main.js"], scripts);
+  watch(["app/src/js/*.js", "!app/src/js/main.min.js"], scripts);
   watch(["app/*.html"]).on("change", browser.reload);
 }
 

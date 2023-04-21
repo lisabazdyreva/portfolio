@@ -2,6 +2,18 @@
   height: 100%;
 }
 
+.page[lang="ru"] {
+  .lang_eng {
+    display: none;
+  }
+}
+
+.page[lang="en"] {
+  .lang_rus {
+    display: none;
+  }
+}
+
 .page__body {
   margin: 0;
 }
