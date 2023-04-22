@@ -1,12 +1,17 @@
 .home {
-  margin: 100px auto;
+  margin: 100px auto 150px;
   text-align: center;
 
   &__subtitle {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
     margin: 10px 0;
   }
 
   &__title {
+    font-family: "JetBrains Mono", monospace;
+    line-height: 4rem;
+    font-size: 3rem;
     margin: 10px 0;
   }
 }
@@ -14,14 +19,15 @@
 .socials {
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
+  margin-top: 20px;
 
   &__link {
     display: inline-block;
-    background-color: darkgray;
+    font-family: "JetBrains Mono", monospace;
     color: inherit;
     text-decoration: none;
-    border-radius: 15px;
-    padding: 5px 10px;
+    border-radius: 20px;
+    padding: 5px 15px;
   }
 }

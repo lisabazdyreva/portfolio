@@ -1,0 +1,11 @@
+$main-font-color: #191919;
+
+.page {
+  color: $main-font-color;
+}
+
+.home {
+  &__title {
+    color: $main-font-color;
+  }
+}

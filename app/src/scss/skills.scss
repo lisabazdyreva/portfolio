@@ -3,5 +3,101 @@
 
   &__title {
     text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1.2em;
+    padding-bottom: 8px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+  }
+
+  .skills-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .skill-list {
+    list-style: none;
+    padding: 0;
+
+    &__item {
+      font-family: "JetBrains Mono", monospace;
+      margin: 10px 0;
+      position: relative;
+      padding-left: 30px;
+    }
+
+    &__item::before {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+    }
+
+    .html-badge::before {
+      content: url("../images/technologies/HTML5-badge.svg");
+    }
+
+    .js-badge::before {
+      content: url("../images/technologies/javascript-badge.svg");
+    }
+
+    .ts-badge::before {
+      content: url("../images/technologies/typescript-badge.svg");
+    }
+
+    .axios-badge::before {
+      content: url("../images/technologies/axios-badge.svg");
+    }
+
+    .scss-badge::before {
+      content: url("../images/technologies/scss-badge.svg");
+    }
+
+    .bem-badge::before {
+      content: url("../images/technologies/bem-badge.svg");
+    }
+
+    .tailwind-badge::before {
+      content: url("../images/technologies/tailwind-badge.svg");
+    }
+
+    .bootstrap-badge::before {
+      content: url("../images/technologies/bootstrap-badge.svg");
+    }
+
+    .react-badge::before {
+      content: url("../images/technologies/react-badge.svg");
+    }
+
+    .redux-badge::before {
+      content: url("../images/technologies/redux-badge.svg");
+    }
+
+    .router-badge::before {
+      content: url("../images/technologies/react-router-badge.svg");
+    }
+
+    .angular-badge::before {
+      content: url("../images/technologies/angular-badge.svg");
+    }
+
+    .rx-badge::before {
+      content: url("../images/technologies/ngrx-rxjs-badge.svg");
+    }
+
+    .material-badge::before {
+      content: url("../images/technologies/angular-material-badge.svg");
+    }
+
+    .vue-badge::before {
+      content: url("../images/technologies/vue-badge.svg");
+    }
+
+    .pinia-badge::before {
+      width: 13px;
+      left: 3px;
+      content: url("../images/technologies/pinia-badge.svg");
+    }
   }
 }

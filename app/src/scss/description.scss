@@ -2,14 +2,27 @@
   margin: 0 auto;
 
   .work {
+    margin-top: 100px;
     &__title {
       text-transform: uppercase;
+      font-size: 2em;
+      line-height: 1.2em;
+      padding-bottom: 8px;
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
     }
   }
 
   .about {
+    margin-top: 50px;
+
     &__title {
       text-transform: uppercase;
+      font-size: 2em;
+      line-height: 1.2em;
+      padding-bottom: 8px;
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
     }
   }
 }
