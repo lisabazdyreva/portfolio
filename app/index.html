@@ -12,21 +12,27 @@
 
     <title>Dev Bazdyreva Elizaveta</title>
   </head>
-  <body class="body page__body">
+  <body class="body page__body dark-mode">
     <header class="header body__header">
       <nav class="nav header__nav">
         <ul class="nav-list">
           <li class="nav-list__item">
-            <a class="nav-list__link lang_rus" href="#">Главная</a>
-            <a class="nav-list__link lang_eng" href="#">Main</a>
+            <a class="nav-list__link lang_rus" href="#main">Главная</a>
+            <a class="nav-list__link lang_eng" href="#main">Main</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link lang_rus" href="#">Обо мне</a>
-            <a class="nav-list__link lang_eng" href="#">About</a>
+            <a class="nav-list__link lang_rus" href="#experience">Опыт</a>
+            <a class="nav-list__link lang_eng" href="#experience"
+              >Work experience</a
+            >
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link lang_rus" href="#">Проекты</a>
-            <a class="nav-list__link lang_eng" href="#">Projects</a>
+            <a class="nav-list__link lang_rus" href="#about-me">Обо мне</a>
+            <a class="nav-list__link lang_eng" href="#about-me">About</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link lang_rus" href="#projects">Проекты</a>
+            <a class="nav-list__link lang_eng" href="#projects">Projects</a>
           </li>
           <li class="nav-list__item">
             <button
@@ -48,7 +54,7 @@
       </nav>
     </header>
     <main class="main body__main">
-      <div class="home main__home wrapper">
+      <div id="main" class="home main__home wrapper">
         <p class="home__subtitle lang_rus">привет! меня зовут</p>
         <p class="home__subtitle lang_eng">Hi there! My name is</p>
         <h1 class="home__title lang_rus">
@@ -98,6 +104,10 @@
             <li class="skill-list__item vue-badge">Vue3</li>
             <li class="skill-list__item pinia-badge">Pinia</li>
           </ul>
+          <ul class="skill-list skills__skill-list">
+            <li class="skill-list__item">Git</li>
+            <li class="skill-list__item">WebStorm</li>
+          </ul>
         </div>
 
         <p class="skills__description lang_rus">
@@ -111,7 +121,7 @@
         </p>
       </div>
       <div class="description main__description wrapper">
-        <article class="work">
+        <article id="experience" class="work">
           <h2 class="work__title lang_rus">О работе</h2>
           <h2 class="work__title lang_eng">Work experience</h2>
 
@@ -172,7 +182,7 @@
           </p>
           <p class="work__info lang_eng">lorem</p>
         </article>
-        <article class="about">
+        <article id="about-me" class="about">
           <h2 class="about__title lang_eng">About me</h2>
           <h2 class="about__title lang_rus">Обо мне</h2>
           <p class="about__info lang_rus">
@@ -192,42 +202,38 @@
           <p class="about__info lang_eng">lorem</p>
         </article>
       </div>
-      <div class="projects main__projects wrapper">
+      <div class="projects main__projects wrapper" id="projects">
         <h2 class="projects__title lang_eng">Projects from work:</h2>
         <h2 class="projects__title lang_rus">Рабочие проекты:</h2>
-
-        <article class="project projects__item">
-          <h3 class="project__title lang_eng">Neksy</h3>
-          <h3 class="project__title lang_rus">Нэкси</h3>
-          <p class="project__description lang_rus">
+        <article class="project-card projects__project-card">
+          <h3 class="project-card__title lang_eng">Neksy</h3>
+          <h3 class="project-card__title lang_rus">Нэкси</h3>
+          <p class="project-card__description lang_rus">
             Сайт-визитка о бухгалтерских услугах. Текст, дизайн для проекта я
             разрабатывала самостоятельно. Естественно, код тоже.
           </p>
-          <p class="project__description lang_eng">About site</p>
-          <a class="project__link lang_rus" href="#">Перейти на сайт</a>
-          <a class="project__link lang_eng" href="#">Go to site >></a>
-
-          <div class="project__technologies">
-            <ul class="technologies-list project__technologies-list">
+          <p class="project-card__description lang_eng">About site</p>
+          <div class="project-card__technologies">
+            <ul class="technologies-list project-card__technologies-list">
               <li class="technologies-list__item">HTML5</li>
               <li class="technologies-list__item">CSS3</li>
               <li class="technologies-list__item">Javascript</li>
             </ul>
           </div>
-        </article>
 
-        <article class="project projects__item">
-          <h3 class="project__title lang_eng">Market trade</h3>
-          <h3 class="project__title lang_rus">Маркет трейд</h3>
-          <p class="project__description lang_rus">
+          <a class="project-card__link lang_rus" href="#">Перейти на сайт</a>
+          <a class="project-card__link lang_eng" href="#">Go to site >></a>
+        </article>
+        <article class="project-card projects__project-card">
+          <h3 class="project-card__title lang_eng">Market trade</h3>
+          <h3 class="project-card__title lang_rus">Маркет трейд</h3>
+          <p class="project-card__description lang_rus">
             Сайт поставщика продуктов питания. Текст и дизайн также созданы
             мной, как и код. Сайт работает на движке WordPress.
           </p>
-          <p class="project__description lang_eng">About site</p>
-          <a class="project__link lang_rus" href="#">Перейти на сайт</a>
-          <a class="project__link lang_eng" href="#">Go to site >></a>
-          <div class="project__technologies">
-            <ul class="technologies-list project__technologies-list">
+          <p class="project-card__description lang_eng">About site</p>
+          <div class="project-card__technologies">
+            <ul class="technologies-list project-card__technologies-list">
               <li class="technologies-list__item">HTML5</li>
               <li class="technologies-list__item">CSS3</li>
               <li class="technologies-list__item">PHP</li>
@@ -235,20 +241,19 @@
               <li class="technologies-list__item">Wordpress</li>
             </ul>
           </div>
+          <a class="project-card__link lang_rus" href="#">Перейти на сайт</a>
+          <a class="project-card__link lang_eng" href="#">Go to site >></a>
         </article>
-
-        <article class="project projects__item">
-          <h3 class="project__title lang_eng">Maxel</h3>
-          <h3 class="project__title lang_rus">Максэл</h3>
-          <p class="project__description lang_rus">
+        <article class="project-card projects__project-card">
+          <h3 class="project-card__title lang_eng">Maxel</h3>
+          <h3 class="project-card__title lang_rus">Максэл</h3>
+          <p class="project-card__description lang_rus">
             Сайт дистрибьютора продуктов питания. Текст и дизайн также созданы
             мной, как и код. Сайт работает на движке WordPress.
           </p>
-          <p class="project__description lang_eng">About site</p>
-          <a class="project__link lang_rus" href="#">Перейти на сайт</a>
-          <a class="project__link lang_eng" href="#">Go to site >></a>
-          <div class="project__technologies">
-            <ul class="technologies-list project__technologies-list">
+          <p class="project-card__description lang_eng">About site</p>
+          <div class="project-card__technologies">
+            <ul class="technologies-list project-card__technologies-list">
               <li class="technologies-list__item">HTML5</li>
               <li class="technologies-list__item">CSS3</li>
               <li class="technologies-list__item">PHP</li>
@@ -256,23 +261,24 @@
               <li class="technologies-list__item">Wordpress</li>
             </ul>
           </div>
+          <a class="project-card__link lang_rus" href="#">Перейти на сайт</a>
+          <a class="project-card__link lang_eng" href="#">Go to site >></a>
         </article>
-
-        <article>
-          <h3 class="project__title lang_eng">USN</h3>
-          <h3 class="project__title lang_rus">Упрощёнка</h3>
-          <p class="project__description lang_rus">
+        <article class="project-card projects__project-card">
+          <h3 class="project-card__title lang_eng">USN</h3>
+          <h3 class="project-card__title lang_rus">Упрощёнка</h3>
+          <p class="project-card__description lang_rus">
             Сайт времён работы в Актион, моей задачей была вёрстка.
           </p>
-          <p class="project__description lang_eng">About site</p>
-          <a class="project__link lang_rus" href="#">Перейти на сайт</a>
-          <a class="project__link lang_eng" href="#">Go to site >></a>
-          <div class="project__technologies">
-            <ul class="technologies-list project__technologies-list">
+          <p class="project-card__description lang_eng">About site</p>
+          <div class="project-card__technologies">
+            <ul class="technologies-list project-card__technologies-list">
               <li class="technologies-list__item">HTML5</li>
               <li class="technologies-list__item">CSS3</li>
             </ul>
           </div>
+          <a class="project-card__link lang_rus" href="#">Перейти на сайт</a>
+          <a class="project-card__link lang_eng" href="#">Go to site >></a>
         </article>
       </div>
       <div class="learning-projects main__learning-projects wrapper">
@@ -282,7 +288,8 @@
         <h2 class="learning-projects__title lang_rus">
           Мои учебные и пет проекты:
         </h2>
-        <article class="project-card learning-projects__project">
+
+        <article class="project-card learning-projects__project-card">
           <h3 class="project-card__title lang_eng">This portfolio site</h3>
           <h3 class="project-card__title lang_rus">Этот сайт портфолио</h3>
           <p class="project-card__description lang_eng">
@@ -300,7 +307,7 @@
             </ul>
           </div>
         </article>
-        <article class="project-card learning-projects__project">
+        <article class="project-card learning-projects__project-card">
           <h3 class="project-card__title lang_eng">Six cities</h3>
           <h3 class="project-card__title lang_rus">Шесть городов</h3>
           <p class="project-card__description lang_rus">
@@ -309,7 +316,7 @@
           </p>
           <p class="project-card__description lang_eng">About</p>
           <div class="project-card__technologies">
-            <ul class="technologies-list project__technologies-list">
+            <ul class="technologies-list project-card__technologies-list">
               <li class="technologies-list__item">HTML5</li>
               <li class="technologies-list__item">CSS</li>
               <li class="technologies-list__item">React</li>
@@ -336,10 +343,10 @@
             </li>
           </ul>
         </article>
-        <article class="project-card learning-projects__project">
+        <article class="project-card learning-projects__project-card">
           <h3 class="project-card__title lang_eng">Big trip</h3>
           <h3 class="project-card__title lang_rus">Большое путешествие</h3>
-          <p class="project__description lang_rus">
+          <p class="project-card__description lang_rus">
             Проект, которым я горжусь больше всего. Это веб-приложение для
             планирования путешествий (точки для посещения, расходы). Проект
             написан на Vanilla Javascript в ООП парадигме. Грубо говоря это
@@ -347,9 +354,9 @@
             MVP подходом. После подобных проектов начинаешь ценить современные
             блага в виде удобных фреймворков
           </p>
-          <p class="project__description lang_eng">About</p>
-          <div class="project__technologies">
-            <ul class="technologies-list project__technologies-list">
+          <p class="project-card__description lang_eng">About</p>
+          <div class="project-card__technologies">
+            <ul class="technologies-list project-card__technologies-list">
               <li class="technologies-list__item">HTML5</li>
               <li class="technologies-list__item">CSS</li>
               <li class="technologies-list__item">JavaScript(es8)</li>
@@ -377,19 +384,19 @@
             </li>
           </ul>
         </article>
-        <article class="project-card learning-projects__project">
+        <article class="project-card learning-projects__project-card">
           <h3 class="project-card__title lang_eng">
             Online shop selling cameras
           </h3>
           <h3 class="project-card__title lang_rus">
             Интернет-магазин фотоаппаратов
           </h3>
-          <p class="project__description lang_rus">
+          <p class="project-card__description lang_rus">
             Single Page Application для покупки фотоаппарата.
           </p>
-          <p class="project__description lang_eng">About</p>
-          <div class="project__technologies">
-            <ul class="technologies-list project__technologies-list">
+          <p class="project-card__description lang_eng">About</p>
+          <div class="project-card__technologies">
+            <ul class="technologies-list project-card__technologies-list">
               <li class="technologies-list__item">HTML5</li>
               <li class="technologies-list__item">CSS</li>
               <li class="technologies-list__item">React</li>
@@ -422,14 +429,13 @@
         <h2 class="certificates__title lang_eng">
           Here you can look at my certificates
         </h2>
-        <h2 class="certificates__title lang_rus">
-          Здесь можно посмотреть мои сертификаты
-        </h2>
+        <h2 class="certificates__title lang_rus">Сертификаты</h2>
       </div>
     </main>
     <footer class="footer body__footer">
       <h2 class="footer__title lang_eng">Thanks for your attention!</h2>
       <h2 class="footer__title lang_rus">Спасибо за внимание!</h2>
+      <div class="lang_eng">Here you can download my CV:</div>
       <div class="lang_rus">Здесь вы можете скачать моё резюме:</div>
       <div class="lang_rus">
         <a href="#">Написать на почту</a>

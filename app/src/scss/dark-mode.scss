@@ -2,10 +2,19 @@ $background-color: #171717;
 $dark-font-color: #e7e7e7;
 
 $pastel-purple: #b1a2ca;
+
 $blue: #597bc5;
+$blue-rgba: rgba(89, 123, 197, 0.6);
 
 $blue-gradient: #43cbff;
+$blue-gradient-transparent: rgba(67, 203, 255, 0.3);
+
 $violet-gradient: #af0ced;
+$violet-gradient-transparent: rgba(175, 12, 237, 0.6);
+
+$black: #1f1f1f;
+$blue-black: #17171b;
+$violet-black: #1a171f;
 
 .dark-mode {
   background-color: $background-color;
@@ -13,6 +22,33 @@ $violet-gradient: #af0ced;
 }
 
 .dark-mode {
+  .header {
+    .nav-list {
+      &__link {
+        &:hover {
+          background-image: radial-gradient(
+            circle,
+            $violet-gradient,
+            $blue-gradient
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      &__button {
+        background-image: linear-gradient(
+          45deg,
+          $violet-gradient,
+          $blue-gradient
+        );
+
+        &:hover {
+          box-shadow: 3px 3px 10px $violet-gradient-transparent;
+        }
+      }
+    }
+  }
   .home {
     &__title {
       background-color: $blue;
@@ -54,6 +90,78 @@ $violet-gradient: #af0ced;
     .about {
       &__title {
         border-bottom-color: $violet-gradient;
+      }
+    }
+  }
+
+  .projects {
+    .project-card {
+      background-color: $blue-rgba;
+
+      border-left: 1px solid $blue-gradient-transparent;
+      border-bottom: 1px solid $blue-gradient-transparent;
+      box-shadow: 3px 3px 10px $blue-gradient-transparent;
+
+      background: linear-gradient(
+        35deg,
+        $blue-black 65%,
+        $blue-gradient-transparent 100%
+      );
+
+      .technologies-list {
+        &__item {
+          background-color: $background-color;
+          color: $blue-gradient;
+          border-color: $blue-gradient-transparent;
+        }
+      }
+
+      &__link {
+        &:hover {
+          background-image: radial-gradient(
+            circle,
+            $violet-gradient,
+            $blue-gradient
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+
+  .learning-projects {
+    .project-card {
+      background-color: $blue-rgba;
+
+      border-left: 1px solid $violet-gradient-transparent;
+      border-bottom: 1px solid $violet-gradient-transparent;
+      box-shadow: 3px 3px 10px $violet-gradient-transparent;
+
+      background: linear-gradient(
+        35deg,
+        $violet-black 65%,
+        $violet-gradient-transparent 100%
+      );
+
+      .technologies-list {
+        &__item {
+          background-color: $background-color;
+          color: $violet-gradient;
+          border-color: $violet-gradient-transparent;
+        }
+      }
+
+      &__link-item {
+        &:hover {
+          background-image: radial-gradient(
+            circle,
+            $blue-gradient,
+            $violet-gradient
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
       }
     }
   }
