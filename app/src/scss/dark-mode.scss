@@ -1,5 +1,6 @@
 $background-color: #171717;
 $dark-font-color: #e7e7e7;
+$white: #f7f7f7;
 
 $pastel-purple: #b1a2ca;
 
@@ -64,10 +65,27 @@ $violet-black: #1a171f;
 
   .socials {
     &__link {
-      border: 2px solid $blue;
+      background: linear-gradient($background-color, $background-color)
+          padding-box,
+        linear-gradient(to right, $violet-gradient, $blue-gradient) border-box;
+      border: 2px solid transparent;
+      transition: box-shadow 0.1s;
 
       &:hover {
-        box-shadow: 1px 1px 1px $violet-gradient;
+        color: $white;
+        box-shadow: 3px 3px 10px $blue-gradient-transparent;
+      }
+
+      &:active {
+        color: $white;
+        background: linear-gradient($blue-black, $blue-black) padding-box,
+          linear-gradient(
+              to right,
+              $violet-gradient-transparent,
+              $blue-gradient-transparent
+            )
+            border-box;
+        box-shadow: 3px 3px 15px $blue-gradient-transparent;
       }
     }
   }
@@ -113,6 +131,11 @@ $violet-black: #1a171f;
           background-color: $background-color;
           color: $blue-gradient;
           border-color: $blue-gradient-transparent;
+
+          &:hover {
+            border-color: $blue-gradient;
+            box-shadow: 3px 3px 10px $blue-gradient-transparent;
+          }
         }
       }
 
@@ -120,7 +143,7 @@ $violet-black: #1a171f;
         &:hover {
           background-image: radial-gradient(
             circle,
-            $violet-gradient,
+            $dark-font-color,
             $blue-gradient
           );
           background-clip: text;
